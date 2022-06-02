@@ -14,9 +14,9 @@
     - S3
     - CloudFront
 - The AWS CLI: 
-    - CLI setup
+    - CLI setup => *DONE on 2 Jun 2022* 
     - usage on EC2
-    - best practices
+    - best practices => *DONE on 2 Jun 2022* 
     - SDK
     - advanced usage
 - In-Depth Database comparison: 
@@ -88,5 +88,26 @@
 - Account settings => password policy
 - Access to AWS options
   - aws management console, protected by password + MFA
-  - cli key, protected by access keys => generated through the AWS Console
-  - sdk, protected by access keys
+  - cli => cli key, protected by access keys => generated through the AWS Console => aws-cli => open source
+    - A tool that enables you to interact with AWS services using commands in your command-line shell
+    - Direct access to the public APIs of AWS services
+    - You can develop scripts to manage your resources
+    - It’s open-source https://github.com/aws/aws-cli
+    - Alternative to using AWS Management Console
+  - sdk, protected by access keys => language specific APIs
+    - Language-specific APIs (set of libraries)
+    - Enables you to access and manage AWS services programmatically
+    - Embedded within your application
+    - Supports
+    - SDKs(JavaScript,Python,PHP,.NET,Ruby,Java,Go,Node.js, C++)
+    - Mobile SDKs (Android, iOS, ...)
+    - IoT Device SDKs (Embedded C, Arduino, ...)
+    - Example: AWS CLI is built on AWS SDK for Python
+- Best Practice
+    - Don’t use the root account except for AWS account setup • One physical user = One AWS user
+    - Assign users to groups and assign permissions to groups
+    - Create a strong password policy
+    - Use and enforce the use of Multi Factor Authentication (MFA)
+    - Create and use Roles for giving permissions to AWS services
+    - Use Access Keys for Programmatic Access (CLI / SDK)
+    - Audit permissions of your account with the IAM Credentials Report • Never share IAM users & Access Keys
