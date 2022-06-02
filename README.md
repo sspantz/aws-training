@@ -79,4 +79,11 @@
     - Action:listofactionsthispolicyallowsordenies
     - Resource:listofresourcestowhichtheactionsappliedto
     - Condition:conditionsforwhenthispolicyisineffect (optional)
-     
+- Remove users
+  - add permissions back to users
+  - play with policies => visual editor => JSON
+- Password Policies
+- MFA
+  - root user
+  - IAM users 
+- Account settings
