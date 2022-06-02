@@ -2,7 +2,7 @@
 
 ## Table of Contents
 - The AWS Fundamentals: 
-    - IAM
+    - IAM => *DONE on 2 Jun 2022*
     - EC2 
     - Load Balancing
     - Auto Scaling
