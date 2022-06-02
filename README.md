@@ -82,8 +82,11 @@
 - Remove users
   - add permissions back to users
   - play with policies => visual editor => JSON
-- Password Policies
-- MFA
+- MFA => try to config on your phone => QR code => add accounts
   - root user
   - IAM users 
-- Account settings
+- Account settings => password policy
+- Access to AWS options
+  - aws management console, protected by password + MFA
+  - cli key, protected by access keys => generated through the AWS Console
+  - sdk, protected by access keys
